@@ -1,49 +1,111 @@
-   
+ /* ==================================================
+    CSS FOR THE THUMBNAIL
+    ===============================================*/   
             .thumbnail{
                 width: 100%;
               margin-top: 10px;
             }
-
+/*===================================================
+  CSS FOR THE TITLE OF THE VIDEO
+  ===================================================*/
             .video-title{
                 margin-top: 0;
                 font-size: 14px;
                 font-weight: 500;
-                line-height: 20px ;
+                line-height: 20px;
                 margin-bottom: 12px;
             }
+/*=====================================================
+  CSS FOR BOTH THE THUMBNAIL AND THE VIDEO TITLE
+  =====================================================*/
             .video-preview{
                 width: 300px;
             }
             .video-info-grid{
                 display: grid;
-                grid-template-columns: 50px 1fr; 
+                grid-template-columns: 50px 1fr;
             }
+/*=========================================================
+  CSS TO SHOW THE PROFILE PICTURE OF THE OWNER OF THE VIDEO
+  =========================================================
+*/
             .channel-picture{
                 display: inline-block;
                 width: 50px;
                 vertical-align: top;
             }
+            /*=========================================================
+            INFO ABOUT THE VIDEO
+            =========================================================
+            */
             .video-info{
                 display: inline-block;
                 width: 245px;
             }
+            /*=========================================================
+            PROFILE PICTURE STYLES
+            =========================================================
+            */
             .profile-picture{
                 width: 40px;
                 border-radius: 50%;
                 margin-bottom: 50px;
             }
+            /*=========================================================
+            ADDING MARGIN BOTTOM TO THE THUMBNAIL ROW
+            =========================================================*/
             .thumbnail-row{
                 margin-bottom: 2px;
 
             }
+            /*=========================================================
+            STYLES FOR THE AUTHOR NAME AND VIEW COUNT 
+            =========================================================*/
             .video-author, .video-stat{
                 font-size: 12px;
                 color: rgb(96, 96, 96);
             }
+            /*=========================================================
+            STYLES FOR THE GRID DISPLAY OF VIDEOS   
+            =========================================================*/
             .video-grid{
                 display: grid;
-                grid-template-columns: 1fr 1fr 1fr;
-                column-gap: 15px;
-                row-gap: 30px;
+               grid-template-columns: 1fr 1fr 1fr;
+               column-gap: 16px;
+               
+
             }
-            
+            /*=========================================================
+            ADDING STYLES FOR THE SECOND VIDEO (COPY OF THE FIRST VIDEO STYLES) 
+            WAS HAVING ISSUES APPLYING THE STYLES TO THE SECOND VIDEO SO I HAD TO
+            CREATE A COPY OF THE FIRST VIDEO STYLES AND ADDED "11" TO THE CLASS NAMES
+            TO MAKE IT WORK
+            SAME FOR EVERYWHERE I HAVE "11" ADDED TO THE CLASS NAMES
+            =========================================================*/
+            .video-info-grid11{
+                display: grid;
+                grid-template-columns: 50px 1fr;
+                row-gap: 10px;
+            }
+            .channel-picture11{
+                display: inline-block;
+                width: 50px;
+                vertical-align: top;
+            }
+            .video-info11{
+                display: inline-block;
+                width: 245px;
+            }
+            .profile-picture11{
+                display: grid;
+                width: 40px;
+                border-radius: 50%;;
+            }
+            .video-title11{
+                display: grid;
+                margin-top: 0;
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 20px;
+                margin-bottom: 12px;
+            }

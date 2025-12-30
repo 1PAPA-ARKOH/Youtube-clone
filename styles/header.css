@@ -1,15 +1,43 @@
+/*========================================================================
+   FLEXBXOX FOR THE BAR THAT CONTAINS THE SEARCH BAR, MENU & THE OTHERS
+===========================================================================*/
 .header{
- height: 40px;
+ height: 55px;
  display: flex;
  flex-direction: row;
  justify-content: space-between;
-}
 
+ position: fixed;
+ top: 0;
+ left: 0;
+ right: 0;
+ 
+ background-color: white;
+ border-bottom-width: 1px;
+ border-bottom-style: solid;
+ border-bottom-color: rgb(238, 229, 229);
+
+}
+/*=========================================================
+   LEFT SECTION CONTAINS THE MENU ICON & YOUTUBE LOGO
+   MIDDLE SECTION CONTAINS THE SEARCH BAR
+   RIGHT SECTION CONTAINS THE UPLOAD, YOUTUBE APPS, NOTIFICATIONS & PROFILE PICTURE ICONS
+   =========================================================*/
 .left-section{
     display: flex;
     align-items: center;
 }
-
+.youtube-logo{
+    height: 23px;
+}
+.menu-1{
+    height: 24px;
+    margin-left: 24px;
+    margin-right: 20px;
+}
+/* =========================================================
+   MIDDLE SECTION STYLES
+   =========================================================*/
 .middle-section{
    flex: 1;
   margin-left: 70px;
@@ -21,32 +49,17 @@
 .search-box{
     flex: 1;
     height: 35px;
-     padding-left: 10px;
+    padding-left: 10px;
     font-size: 16px;
     border-width: 1px;
     border-radius: 2px;
     box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
     border-color: rgb(172, 172, 172);
+    width: 0;
 }
 .search-box::placeholder{
     font-family: Roboto, Arial;
     font-size: 16px;
-}
-
-.right-section{
-    background-color: lightblue;
-    display: flex;
-    width: 180px;
-    align-items: center;
-    justify-content: space-between;
-}
-.menu-1{
-    height: 24px;
-    margin-left: 24px;
-    margin-right: 20px;
-}
-.youtube-logo{
-    height: 23px;
 }
 .search-button{
     height: 40px;
@@ -73,6 +86,21 @@
     height: 24px;
     margin-top: 4px;
 }
+/* =========================================================
+   RIGHT SECTION STYLES
+   =========================================================*/
+.right-section{
+    display: flex;
+    margin-right: 20px;
+    width: 180px;
+    align-items: center;
+    justify-content: space-between;
+    flex-shrink: 0;
+}
+
+.youtube-apps-icon{
+    height: 24px;
+}
 
 .upload-icon{
     height: 24px;
@@ -88,4 +116,6 @@
 
 .channel-picture-icon{
     height: 32px;
+    border-radius: 16px;
+
 }
