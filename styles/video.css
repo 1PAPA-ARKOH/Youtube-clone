@@ -13,7 +13,7 @@
                 font-size: 14px;
                 font-weight: 500;
                 line-height: 20px;
-                margin-bottom: 12px;
+                margin-bottom: 10px;
             }
 /*=====================================================
   CSS FOR BOTH THE THUMBNAIL AND THE VIDEO TITLE
@@ -47,7 +47,7 @@
             =========================================================
             */
             .profile-picture{
-                width: 40px;
+                width:33px;
                 border-radius: 50%;
                 margin-bottom: 50px;
             }
@@ -55,7 +55,8 @@
             ADDING MARGIN BOTTOM TO THE THUMBNAIL ROW
             =========================================================*/
             .thumbnail-row{
-                margin-bottom: 2px;
+                margin-bottom: 8px;
+                position: relative;
 
             }
             /*=========================================================
@@ -72,9 +73,26 @@
                 display: grid;
                grid-template-columns: 1fr 1fr 1fr;
                column-gap: 16px;
+               row-gap: 20px;
                
-
             }
+            @media (max-width:750px) {
+                .video-grid{
+                    grid-template-columns: 1fr 1fr;
+                }
+            }
+             @media (min-width: 751px) and (max-width: 999px){
+                .video-grid{
+                    grid-template-columns: 1fr 1fr 1fr;
+                }
+            }
+
+            @media (min-width:1000px) {
+                .video-grid{
+                    grid-template-columns: 1fr 1fr 1fr 1fr;
+                }
+            }
+           
             /*=========================================================
             ADDING STYLES FOR THE SECOND VIDEO (COPY OF THE FIRST VIDEO STYLES) 
             WAS HAVING ISSUES APPLYING THE STYLES TO THE SECOND VIDEO SO I HAD TO
@@ -108,4 +126,17 @@
                 font-weight: 500;
                 line-height: 20px;
                 margin-bottom: 12px;
+            }
+
+            .video-time{
+                font-family: roboto, arial;
+                font-size: 12px;
+                font-weight: 500;
+                padding: 4px 10px;
+                background-color: black;
+                color: white;
+                position: absolute;
+                bottom: 10px;
+                right: 5px;
+                border-radius: 2px;
             }
